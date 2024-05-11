@@ -8,5 +8,14 @@ services:
       environment:
         CSVSERVER_BORDER: Orange
       volumes:
-        - /root/task/inputFile:/csvserver/inputdata
-
+        - /root/solution/task-repo/solution/inputFile:/csvserver/inputdata
+    promethemous:
+      image: prom/prometheus:v2.45.2
+      ports:
+        - "9090:9090"
+      volumes:
+        - /root/solution/task-repo/solution/prometheus.yml:/etc/prometheus/prometheus.yml
+      command:
+        - "--config.file=/etc/prometheus/prometheus.yml"
+      depends_on:
+        - csvserver
