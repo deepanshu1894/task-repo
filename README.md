@@ -9,6 +9,4 @@ one by one
 Another test line
 
 this is the file
-just for testing dwjgded
-daedhijeakd
-sdbjhsdsg
+just for testing
