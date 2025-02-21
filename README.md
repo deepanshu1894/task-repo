@@ -12,3 +12,6 @@ this is the file
 just for testing dwjgded
 daedhijeakd
 sdbjhsdsg
+
+this is to test a pre commit edit
+this is to test a pre commit edit
